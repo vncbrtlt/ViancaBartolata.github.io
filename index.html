@@ -1,0 +1,121 @@
+<!DOTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(224, 128, 236, 0.808);
+        }
+
+        .container {
+            background: linear-gradient(to right, #8B4513 10%, #D2B48C 10%, #D2B48C 20%, #8B4513 20%, #8B4513 30%, #D2B48C 30%, #D2B48C 40%, #8B4513 40%, #8B4513 50%, #D2B48C 50%, #D2B48C 60%, #8B4513 60%, #8B4513 70%, #D2B48C 70%, #D2B48C 80%, #8B4513 80%, #8B4513 90%, #D2B48C 90%);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: #fff;
+        }
+
+        .intro {
+            background-color: #8B4513 10%,
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .tabs {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tab {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #ddd;
+        }
+
+        .tab-content {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>Welcome to my website</h1>
+            <img class="header image" src="vianca1.jpg" width="300" lenght="300">
+            <p>Hello, I'm Vianca ;).</p>
+    <style>
+                header {
+                  display: flex;
+                  align-items: middle; 
+                }
+              
+                h1 {
+                  margin-right: 50px;
+                }
+              </style>
+        </div>
+    
+         <ul class="tabs">
+            <li class="tab" onclick="openTab('home')">Home</li>
+            <li class="tab" onclick="openTab('about')">About</li>
+            <li class="tab" onclick="openTab('socials')">Socials</li>
+        </ul>
+
+        <div class="tab-content" id="home">
+            <h2>Home</h2>
+            <p>NAME:Vianca Bartolata </p>
+            <p>AGE: 19 Years old</p>
+            <p>BDAY: October 6, 2003</p>
+            <p>ADDRESS: Phase 2 blk 2 lot 12 pcs 54 Southville 3 Poblacion, Muntinlupa City</p>
+        </div>
+
+        <div class="tab-content" id="about">
+            <h2>About Me</h2>
+            <p>Allow me to share my family background, we are 7 in the family and my parents are my support system.
+                my siblings have their family and lived independently.
+                I have few hobbies that i like to do when i have a time or when
+                 i got bored like playing guitar, eating, and watching some movies. 
+            </p>
+        </div>
+
+        <div class="tab-content" id="socials">
+            <h2>My Socials</h2>
+            <p>Facebook: <a href="https://www.facebook.com/vncbrtlt?mibextid=ZbWKwL"> Vianca Bartolata </a></p>
+            <p>Instagram: <a href="https://instagram.com/vncbrtlt_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="> vncbrtlt_ </a></p>
+            <p>Tiktok: <a href="https://tiktok.com/@vncbrtlt"> @vncbrtlt</a></p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
